@@ -8,7 +8,7 @@ SCRIPTS_DIR := scripts
 PCAP_FILES := $(DATA_DIR)/consumer_capture.pcap
 CSV_FILES := $(PCAP_FILES:.pcap=.csv)
 THROUGHPUT_FILES := $(CSV_FILES:.csv=_throughput.csv)
-PLOT_FILES := $(THROUGHPUT_FILES:.csv=.png)
+PLOT_FILES := $(THROUGHPUT_FILES:.csv=.pdf)
 
 # 目标：将PCAP文件转换为CSV文件
 $(DATA_DIR)/%.csv: $(DATA_DIR)/%.pcap
