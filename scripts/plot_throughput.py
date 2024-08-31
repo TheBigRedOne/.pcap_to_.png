@@ -35,7 +35,7 @@ def plot_throughput(csv_file):
     # 禁用时间偏移显示，移除 '1e9'
     plt.gca().get_xaxis().get_major_formatter().set_useOffset(False)
 
-    output_file = os.path.splitext(csv_file)[0] + '.png'
+    output_file = os.path.splitext(csv_file)[0] + '.pdf'
     plt.savefig(output_file)
     plt.show()
 
